@@ -1,0 +1,11 @@
+BigaBid Home Assignment Seeder
+
+Prerequisites:
+* NodeJS (12+ Should be good)
+* Redis (local install)
+
+Running:
+In your command line run the following commands:
+* npm install
+* node index.js [NUMBER_OF_CAMPAIGNS] [MIN_BIDS_PER_SECOND] [MAX_BIDS_PER_SECOND]
+
