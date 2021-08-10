@@ -35,7 +35,7 @@ app.get('/api/bids', async (req, res) => {
     for (let i=0; i<bidsKeysAndScores.length; i+=2) {
         let currentBid = await redisGet(bidsKeysAndScores[i])
         currentBid = JSON.parse(currentBid)
-        result.push({ ...currentBid, time: parseInt(bidsKeysAndScores[i+1]) })
+        result.push({ ...currentBid, id: bidsKeysAndScores[i], time: parseInt(bidsKeysAndScores[i+1]) })
     }
 
     res.json(result)

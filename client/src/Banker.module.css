@@ -1,0 +1,17 @@
+.row {
+    margin-bottom: 20px;
+}
+
+.bidsTable {
+    border-spacing: 0;
+}
+
+.bidsTable th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.bidsTable td {
+    border: 1px solid black;
+    padding: 5px;
+}
